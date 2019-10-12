@@ -25,6 +25,11 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('/fonts/NeueHaasUnica-Pro.woff');
+}
+
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -305,6 +310,12 @@ h2 {
 
 .music-h1-2 {
 	padding: 2rem 0;
+}
+
+.info p {
+	font-family: 'Neue Haas Unica';
+	font-size: 1.75rem;
+	letter-spacing: .1rem;
 }
 
 .info-logo {
