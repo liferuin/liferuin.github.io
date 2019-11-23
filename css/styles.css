@@ -109,31 +109,31 @@ body {
     animation: bg-fade 5s;
 }
 
-@-webkit-keyframes bg-fade {
-    from {opacity: 0.2;}
-    to {opacity:1;}
-}
+    @-webkit-keyframes bg-fade {
+        from {opacity: 0.2;}
+        to {opacity:1;}
+    }
 
-@keyframes bg-fade {
-    from {opacity: 0.2;}
-    to {opacity:1;}
-}
+    @keyframes bg-fade {
+        from {opacity: 0.2;}
+        to {opacity:1;}
+    }
 
 .logo, .title {
     float: left;
     line-height: 100vh;
 }
 
-.container-col-50 {
+.col-50 {
     height: 100%;
     width: 50%;
 }
 
-.container-row-33, .container-row-66 {
+.row-33, .row-66 {
     width: 100%;
 }
 
-.container-row-33, .container-col-50, .container-row-66 {
+.row-33, .col-50, .row-66 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,15 +147,15 @@ body {
     flex-direction: row;
 }
 
-.container-col-50 a:hover::after {
+.col-50 a:hover::after {
     content: '\2197';
 }
 
-.container-row-33 {
+.row-33 {
     height: 33.33%;
 }
 
-.container-row-66 {
+.row-66 {
     height: 66.67%;
 }
 
