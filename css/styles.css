@@ -32,6 +32,7 @@ a:hover {
 }
 
 h1 {
+    margin: 1rem;
     font: 2.4rem 'Druk Wide', Arial, san-serif;
 }
 
@@ -40,6 +41,11 @@ ul,li {
     list-style-position:inside;
     margin:0;
     padding:0;
+    text-align: center;
+}
+
+p {
+    margin: 0.5rem;
 }
 
 @media screen and (max-width: 736px) {
@@ -64,7 +70,7 @@ body {
     margin-right: 0;
 }
 
-.site-wrap{
+.container-100{
     margin: -1rem 0 0;
     height: 100vh;
     display: flex;
@@ -72,6 +78,7 @@ body {
     justify-content: center;
     align-items: stretch;
     opacity: 0;
+    
 	-webkit-animation: fadeIn ease-in 1;
 	-moz-animation: fadeIn ease-in 1;
 	animation: fadeIn ease-in 1;
@@ -95,44 +102,79 @@ body {
                                         supported by Chrome, Opera and Firefox */
     }
 
-#index-logo {
+.logo {
     background: url(/images/lr-logo.png) center center no-repeat;
     background-size: 35vw;
 }
 
-#index-logo, #audio-title, #releases-title {
+.logo, .title {
     float: left;
-    border-right: #fff 1px solid;
     line-height: 100vh;
 }
 
-#index-logo, #container-content, #audio-title, #releases-title {
+.container-col-50 {
+    height: 100%;
     width: 50%;
 }
 
-#index-logo, #index-audio, #index-visual, #index-info, #audio-title, #audio-releases, #audio-mixes, #back, #releases-title, #releases-text, #visual-content {
+.container-row-33, .container-row-66 {
+    width: 100%;
+}
+
+.container-row-33, .container-col-50, .container-row-66 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#container-content a:hover::after {
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.container-col-50 a:hover::after {
     content: '\2197';
 }
 
-#index-audio, #index-visual, #index-info, #audio-releases, #audio-mixes, #back {
+.container-row-33 {
     height: 33.33%;
 }
 
-#releases-text, #visual-content {
-    text-align: center;
+.container-row-66 {
     height: 66.67%;
 }
 
-#index-audio, #index-visual, #audio-releases {
+.no-border {
+    border: none;
+}
+
+.border-right {
+    border-right: #fff 1px solid;
+}
+
+.border-bottom {
     border-bottom: #fff 1px solid;
 }
 
-#back {
-    border-top: #fff 1px solid;
+#info-description h1 {
+    font-size: 5.4rem;
+}
+
+#info-description-text {
+    padding:0 5rem 0 5rem;
+    font: 4.5rem 'Ogg Roman', serif;
+}
+
+#info-description-text::before {
+    background: #fff;
+    content: "";
+    display: inline-block;
+    height: 0.1rem;
+    position: relative;
+    vertical-align: middle;
+    width: 10vw;
+    margin-right: 2rem;
 }
