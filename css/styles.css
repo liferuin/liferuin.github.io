@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto Mono';
-    src: url('/fonts/Roboto-Regular.ttf');
+    src: url('/fonts/RobotoMono-Regular.ttf');
 }
 
 @font-face {
@@ -32,22 +32,24 @@ a:hover {
 }
 
 h1 {
-    font: 3.6vw 'Druk Wide', sans-serif;
-    line-height: normal;
+    font: 2.4rem 'Druk Wide', Arial, san-serif;
 }
 
-h2 {
-    font: 2.9vw 'Ogg Roman', serif;
-    line-height: normal;
+ul,li {
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
 }
 
-h3 {
-    font: bold 2.4rem 'Roboto Mono', sans-serif;
-    letter-spacing: .2rem;
+@media screen and (max-width: 736px) {
+    h1 {
+        font: 1.6rem 'Druk Wide', Arial, san-serif;
+    }
 }
 
 html {
-	height: 100%;
+	height: 100vh;
 	font-size: 62.5%;
 	font-family: sans-serif;
 	margin: 0!important;
@@ -55,11 +57,11 @@ html {
 }
 
 body {
-    background: #000080;
+    background: #00004d;
     color: #fff;
-    font: 1.2rem 'Roboto Mono', sans-serif;
+    font: 1.6rem 'Roboto Mono', sans-serif;
     line-height: normal;
-    letter-spacing: .1rem;
+    margin-right: 0;
 }
 
 .site-wrap{
@@ -83,11 +85,6 @@ body {
 	animation-duration:1s;
 }
 
-    .site-wrap .title, .site-wrap .content {
-        height: 100vh;
-        width: 50vw;
-    }
-
     .no-select {
         -webkit-touch-callout: none; /* iOS Safari */
           -webkit-user-select: none; /* Safari */
@@ -98,80 +95,44 @@ body {
                                         supported by Chrome, Opera and Firefox */
     }
 
-    .title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow-y: hidden;
-    }
+#index-logo {
+    background: url(/images/lr-logo.png) center center no-repeat;
+    background-size: 35vw;
+}
 
-        #site-title {
-            margin: -3rem;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        
-        #site-description {
-            width: 85%;
-            margin: 0rem;
-        }
-        
-        #site-description::before {
-            background-color: #fff;
-            content: "";
-            display: inline-block;
-            height: 1px;
-            position: relative;
-            vertical-align: middle;
-            width: 25%;
-        }
+#index-logo, #audio-title, #releases-title {
+    float: left;
+    border-right: #fff 1px solid;
+    line-height: 100vh;
+}
 
-    .content {
-        overflow-y: scroll;
-        border-left: 1px #fff solid;
-    }
-        .content img {
-            width: 35vw;
-        }
+#index-logo, #container-content, #audio-title, #releases-title {
+    width: 50%;
+}
 
-        .content #logo {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+#index-logo, #index-audio, #index-visual, #index-info, #audio-title, #audio-releases, #audio-mixes, #back, #releases-title, #releases-text, #visual-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .content .footer {
-            margin: 0 auto;
-            width: 35vw;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-        }
+#container-content a:hover::after {
+    content: '\2197';
+}
 
-        .content #footer-left, .content #footer-right {
-            text-transform: uppercase;
-        }
+#index-audio, #index-visual, #index-info, #audio-releases, #audio-mixes, #back {
+    height: 33.33%;
+}
 
-        .content #line::before {
-            background-color: #fff;
-            content: "";
-            display: inline-block;
-            height: 1px;
-            position: relative;
-            vertical-align: middle;
-            width: 3rem;
-        }
+#releases-text, #visual-content {
+    text-align: center;
+    height: 66.67%;
+}
 
-        .content ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 2rem 0;
-        }
+#index-audio, #index-visual, #audio-releases {
+    border-bottom: #fff 1px solid;
+}
 
-        .content li:hover::after {
-            content: '\2197';
-            font-size: 1rem;
-            margin-top: -.5rem;
-        }
+#back {
+    border-top: #fff 1px solid;
+}
