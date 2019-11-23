@@ -105,6 +105,18 @@ body {
 .logo {
     background: url(/images/lr-logo.png) center center no-repeat;
     background-size: 35vw;
+    -webkit-animation: bg-fade 5s;
+    animation: bg-fade 5s;
+}
+
+@-webkit-keyframes bg-fade {
+    from {opacity: 0.2;}
+    to {opacity:1;}
+}
+
+@keyframes bg-fade {
+    from {opacity: 0.2;}
+    to {opacity:1;}
 }
 
 .logo, .title {
