@@ -19,7 +19,8 @@
 
 * {
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 a {
@@ -58,7 +59,8 @@ html {
 	height: 100vh;
 	font-size: 62.5%;
 	font-family: sans-serif;
-	margin: 0!important;
+    margin: 0;
+    padding: 0;
 	display: block;
 }
 
@@ -67,11 +69,12 @@ body {
     color: #fff;
     font: 1.6rem 'Roboto Mono', sans-serif;
     line-height: normal;
-    margin-right: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .container-100{
-    margin: -1rem 0 0;
+    margin: 0;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
