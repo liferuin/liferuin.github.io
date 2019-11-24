@@ -29,13 +29,19 @@ a {
 }
 
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 h1 {
     margin: 1rem;
-    font: 2.4rem 'Druk Wide', Arial, san-serif;
+    font: 2.4rem 'Druk Wide', Arial, sans-serif;
 }
+
+    @media screen and (max-width: 736px) {
+        h1 {
+            font: 1.6rem 'Druk Wide', Arial, sans-serif;
+        }
+    }
 
 ul,li {
     list-style-type: none;
@@ -49,11 +55,7 @@ p {
     margin: 0.5rem;
 }
 
-@media screen and (max-width: 736px) {
-    h1 {
-        font: 1.6rem 'Druk Wide', Arial, san-serif;
-    }
-}
+
 
 html {
 	height: 100vh;
@@ -73,11 +75,10 @@ body {
     padding: 0;
 }
 
-.container-100{
+.container-100 {
     margin: 0;
     height: 100vh;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: stretch;
     opacity: 0;
@@ -105,6 +106,20 @@ body {
                                         supported by Chrome, Opera and Firefox */
     }
 
+.header {
+    height: 9%;
+    width: 100%;
+    border-bottom: #fff 1px solid;
+}
+
+.site-title {
+    font: 3.2rem 'Druk Wide', Arial, sans-serif;
+}
+
+.header a:hover::after {
+    content: '';
+}
+
 .logo {
     background: url(/images/lr-logo.png) center center no-repeat;
     background-size: 35vw;
@@ -126,11 +141,11 @@ body {
     width: 50%;
 }
 
-.row-33, .row-66 {
+.row-33, .row-50, .row-66 {
     width: 100%;
 }
 
-.row-33, .col-50, .row-66 {
+.row-33, .col-50, .row-50, .row-66, .header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,12 +159,12 @@ body {
     flex-direction: row;
 }
 
-.col-50 a:hover::after {
-    content: '\2197';
-}
-
 .row-33 {
     height: 33.33%;
+}
+
+.row-50 {
+    height: 50%;
 }
 
 .row-66 {
