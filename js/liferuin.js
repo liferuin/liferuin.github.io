@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    // Window Resize 100vh
+    window.onresize = function() {
+        document.body.height = window.innerHeight;
+    }
+
+    window.onresize();
+    
     // Title Text Change
     $("#site-title").click(function () {
         $("#site-title_h1").fadeOut( function () {
