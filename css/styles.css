@@ -234,6 +234,29 @@ body {
     text-align: right;
 }
 
+.fourohfour {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+
+.footer {
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right: 50%;
+    transform: translate(50%);
+    text-align: center;
+}
+
+.mobile-footer {
+    display: block;
+    display: none;
+}
+
 
 
 
@@ -244,6 +267,17 @@ body {
     .col-50 {width: 100%!important;}
     #info-description h1 {font-size: 3.2rem;}
     #info-description-text {font-size: 2.3rem;}
+    .footer {display: none;}
+
+    .mobile-footer {
+        display: block;
+        position: fixed;
+        bottom: 5%;
+        right: 50%;
+        transform: translate(50%);
+        text-align: center;
+        font: 1.4rem 'Roboto Mono', sans-serif;
+    }
 }
 
 @media screen and (max-width: 375px) {
