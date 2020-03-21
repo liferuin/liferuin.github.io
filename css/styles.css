@@ -110,10 +110,12 @@ body {
 
 .container-90 {
     height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
 }
 
 .header {
     height: 10vh;
+    height: calc(var(--vh, 1vh) * 10);
     display: block;
     border-bottom: #fff 1px solid;
 }
