@@ -13,78 +13,41 @@
     src: url('/fonts/DrukWideHeavy.otf');
 }
 
+.ogg {
+    font-family: "Ogg Roman", serif;
+}
+
+.druk {
+    font-family: "Druk Wide", sans-serif;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.bg-very-dark-blue {
+    background-color: #00004d;
+}
+
+.vh-10 {  height:  10vh; }
+.vh-90 {  height:  90vh; }
+.h-33 { height: 33.33%;}
+
+.logo {
+    background: url(/images/lr-logo.png) center center no-repeat;
+    background-size: 35vw;
+}
+
+@media screen and (max-width: 30em) {
+    .logo {display: none;}
+}
+
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-* {
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h1 {
-    margin: 1rem;
-    font: 2.4rem 'Druk Wide', Arial, sans-serif;
-}
-
-    @media screen and (max-width: 736px) {
-        h1 {
-            font: 1.6rem 'Druk Wide', Arial, sans-serif;
-        }
-    }
-
-ul,li {
-    list-style-type: none;
-    list-style-position:inside;
-    margin:0;
-    padding:0;
-    text-align: center;
-}
-
-p {
-    margin: 0.5rem;
-}
-
-
-
-html {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-	font-size: 62.5%;
-	font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-	display: block;
-}
-
 body {
-    background: #00004d;
-    color: #fff;
-    font: 1.4rem 'Roboto Mono', sans-serif;
-    line-height: normal;
-    margin: 0;
-    padding: 0;
-}
-
-.container-100 {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    opacity: 0;
-    
-	-webkit-animation: fadeIn ease-in 1;
+    -webkit-animation: fadeIn ease-in 1;
 	-moz-animation: fadeIn ease-in 1;
 	animation: fadeIn ease-in 1;
 
@@ -95,197 +58,4 @@ body {
 	-webkit-animation-duration:1s;
 	-moz-animation-duration:1s;
 	animation-duration:1s;
-}
-
-    .no-select {
-        -webkit-touch-callout: none; /* iOS Safari */
-          -webkit-user-select: none; /* Safari */
-           -khtml-user-select: none; /* Konqueror HTML */
-             -moz-user-select: none; /* Old versions of Firefox */
-              -ms-user-select: none; /* Internet Explorer/Edge */
-                  user-select: none; /* Non-prefixed version, currently
-                                        supported by Chrome, Opera and Firefox */
-    }
-
-
-.container-90 {
-    height: 90vh;
-    height: calc(var(--vh, 1vh) * 90);
-}
-
-.header {
-    height: 10vh;
-    height: calc(var(--vh, 1vh) * 10);
-    display: block;
-    border-bottom: #fff 1px solid;
-}
-
-.site-title {
-    font: 3.2rem 'Druk Wide', Arial, sans-serif;
-    justify-content: flex-start!important;
-    padding-left: 5rem!important;
-}
-
-.back {
-    justify-content: flex-end!important;
-    padding-right: 5rem!important;
-}
-
-.header a:hover::after {
-    content: '';
-}
-
-.logo {
-    background: url(/images/lr-logo.png) center center no-repeat;
-    background-size: 35vw;
-    -webkit-animation: bg-fade 5s;
-    animation: bg-fade 5s;
-}
-
-    @-webkit-keyframes bg-fade {from {opacity: 0.2;} to {opacity:1;}}
-    @-moz-keyframes bg-fade { from {opacity: 0.2;} to {opacity:1;}}
-    @keyframes bg-fade { from {opacity: 0.2;} to {opacity:1;}}
-
-.logo, .title {
-    float: left;
-    line-height: 100vh;
-    line-height: calc(var(--vh, 1vh) * 100);
-}
-
-.col-50 {
-    height: 100%;
-    width: 50%;
-}
-
-.row-25, .row-33, .row-50, .row-66 {
-    width: 100%;
-}
-
-.row-25, .row-33, .col-50, .row-50, .row-66, .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.row-25 {
-    height: 25%;
-}
-
-.row-33 {
-    height: 33.33%;
-}
-
-.row-50 {
-    height: 50%;
-}
-
-.row-66 {
-    height: 66.67%;
-}
-
-.no-border {
-    border: none;
-}
-
-.border-right {
-    border-right: #fff 1px solid;
-}
-
-.border-bottom {
-    border-bottom: #fff 1px solid;
-}
-
-#info-description h1 {
-    font-size: 4.8rem;
-}
-
-#info-description-text {
-    padding: 0 9vw 0 9vw;
-    font: 3rem 'Ogg Roman', serif;
-}
-
-#info-description-text::before {
-    background: #fff;
-    content: "";
-    display: inline-block;
-    height: 0.1rem;
-    position: relative;
-    vertical-align: middle;
-    width: 10vw;
-    margin-right: 2rem;
-}
-
-.video-wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.video-wrapper iframe {
-    width: 100%;
-}
-
-.video-description {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: right;
-}
-
-.fourohfour {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    text-align: center;
-}
-
-.footer {
-    display: block;
-    position: fixed;
-    bottom: 5%;
-    right: 50%;
-    transform: translate(50%);
-    text-align: center;
-}
-
-.mobile-footer {
-    display: block;
-    display: none;
-}
-
-
-
-
-/* Mobile Styles */
-@media screen and (max-width: 414px) {
-    .index .site-title, .audio .back, .info .back, .mixes .back, .releases .back, .visual .back {justify-content: center!important; padding: 0!important;}
-    .index .back, .index .logo, .audio .site-title, .audio .title, .info .site-title, .info .title, .mixes .site-title, .mixes .title, .releases .site-title, .releases .title, .visual .site-title, .visual .title {display: none;}
-    .col-50 {width: 100%!important;}
-    #info-description h1 {font-size: 3.2rem;}
-    #info-description-text {font-size: 2.3rem;}
-    .footer {display: none;}
-
-    .mobile-footer {
-        display: block;
-        position: fixed;
-        bottom: 5%;
-        right: 50%;
-        transform: translate(50%);
-        text-align: center;
-        font: 1.4rem 'Roboto Mono', sans-serif;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    #info-description-text {font-size: 2rem;}
 }
