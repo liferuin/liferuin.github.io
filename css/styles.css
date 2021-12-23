@@ -39,7 +39,7 @@
 }
 
 @media screen and (max-width: 30em) {
-    .logo {display: none;}
+    .mobile-hide {display: none;}
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
