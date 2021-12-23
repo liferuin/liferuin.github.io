@@ -29,13 +29,25 @@
     background-color: #00004d;
 }
 
-.vh-10 {  height:  10vh; }
-.vh-90 {  height:  90vh; }
-.h-33 { height: 33.33%;}
+.vh-10 {height:  10vh; }
+.vh-90 {height:  90vh; }
+.h-33 {height: 33.33%;}
+.h-66 {height: 66.67%;}
 
 .logo {
     background: url(/images/lr-logo.png) center center no-repeat;
     background-size: 35vw;
+}
+
+#info-description-text::before {
+    background: #fff;
+    content: "";
+    display: inline-block;
+    height: 0.1rem;
+    position: relative;
+    vertical-align: middle;
+    width: 10vw;
+    margin-right: 1rem;
 }
 
 @media screen and (max-width: 30em) {
