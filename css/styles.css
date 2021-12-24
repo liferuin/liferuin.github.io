@@ -71,3 +71,8 @@ body {
 	-moz-animation-duration:1s;
 	animation-duration:1s;
 }
+
+#iframe-wrapper iframe {
+    width: 90%;
+    height: 100%;
+}
