@@ -59,6 +59,8 @@
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     -webkit-animation: fadeIn ease-in 1;
 	-moz-animation: fadeIn ease-in 1;
 	animation: fadeIn ease-in 1;
@@ -70,6 +72,10 @@ body {
 	-webkit-animation-duration:1s;
 	-moz-animation-duration:1s;
 	animation-duration:1s;
+}
+
+html {
+    min-height: -webkit-fill-available;
 }
 
 #iframe-wrapper iframe {
