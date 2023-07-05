@@ -1,0 +1,10 @@
+#info-description-text::before {
+    background: #fff;
+    content: "";
+    display: inline-block;
+    height: 0.1rem;
+    position: relative;
+    vertical-align: middle;
+    width: 10vw;
+    margin-right: 1rem;
+}
