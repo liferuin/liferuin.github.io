@@ -1,73 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#00004d">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css">
-    <title>Audio — LIFERUIN</title>
-</head>
-<body class="bg-pureblue font-robotoMono text-white text-sm fadeIn">
-    <div class="container w-screen h-screen">
-        <nav class="mx-auto w-screen h-1/10 flex flex-row items-center justify-between border-b border-white">
-            <h1 class="hidden md:block mx-auto md:ml-16 text-4xl font-druk">
-                <a href="/" class="hover:underline decoration-1">
-                    LIFERUIN
-                </a>
-            </h1>
-            <h1 class="mx-auto md:mr-16">
-                <a href="/" class="hover:underline decoration-1 uppercase">
-                    Back
-                </a>
-            </h1>
-        </nav>
-        <main class="mx-auto w-screen h-9/10 flex flex-row justify-between">
-            <section class="hidden md:basis-1/2 md:flex flex-col">
-                <div class="basis-full flex items-center justify-center">
-                    <h2 class="text-md md:text-2xl font-druk">
-                        Audio
-                    </h2>
-                </div>
-            </section>
-            <section class="basis-full md:basis-1/2 flex flex-col md:border-l border-white">
-                <div class="basis-1/3 flex items-center justify-center w-full border-b border-white">
-                    <a class="uppercase hover:underline" href="/releases">
-                        Releases
-                    </a>
-                </div>
-                <div class="basis-1/3 flex items-center justify-center w-full border-b border-white">
-                    <a class="uppercase hover:underline" href="/mixes">
-                        Mixes
-                    </a>
-                </div>
-                <div class="basis-1/3 flex items-center justify-center w-full">
-                    <a class="uppercase hover:underline" href="/l-r">
-                        Life—Ruin
-                    </a>
-                </div>
-            </section>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#00004d">
+        <link rel="stylesheet" href="css/tachyons.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <title>Audio — LIFERUIN</title>
+    </head>
+    <body class="w-100 bg-very-dark-blue white roboto-mono">
+        <header class="vh-10 pa0 ma0 bb b--white flex items-center">
+            <div id="header-logo" class="w-100 w-50-ns tc tl-ns pl5-ns mobile-hide">
+                <h1 class="ma0 f2 druk"><a href="/" class="link underline-hover white ttu">Liferuin</a></h1>
+            </div>
+            <div id="back" class="w-100 w-50-ns tc tr-ns pr5-ns">
+                <h1 class="ma0 f6"><a href="/" class="link underline-hover white ttu">Back</a></h1>
+            </div>
+        </header>
+        <main class="vh-90 flex items-center">
+            <div id="left-100" class="w-50-ns h-100-ns br b--white mobile-hide flex items-center justify-center">
+                <h1 class="ma0 f5 f4-m f3-l druk">Audio</h1>
+            </div>
+            <div id="right-33-33-33" class="w-100 w-50-ns h-100 ma0 flex flex-column">
+                <div id="top-33" class="w-100 h-33 flex items-center justify-center bb b--white"><p class="ma0 ttu f6"><a href="/releases" class="link underline-hover white">Releases</a></p></div>
+                <div id="mid-33" class="w-100 h-33 flex items-center justify-center bb b--white"><p class="ma0 ttu f6"><a href="/mixes" class="link underline-hover white">Mixes</a></p></div>
+                <div id="bottom-33" class="w-100 h-33 flex items-center justify-center"><p class="ma0 ttu f6"><a href="/l-r" class="link underline-hover white">Life—Ruin</a></p></div>
+            </div>
         </main>
-    </div>
-</body>
+    </body>
 </html>

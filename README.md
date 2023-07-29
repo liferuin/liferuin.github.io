@@ -1,1 +1,1 @@
-# liferu.in
+# liferuin.github.io
